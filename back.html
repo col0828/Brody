@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brody</title>
+</head>
+<style>
+    body {
+        background-color: #282828;
+        padding: auto;
+    }
+
+    img {
+        height: 400px;
+        margin: 5px;
+    }
+</style>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Brody</title>
+    </head>
+    <style>
+        body {
+            margin: 0;
+            background-color: #282828;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .return {
+            height: 100px;
+            width: 80%;
+            margin: auto;
+            padding-top: 20px;
+            display: flex;
+        }
+
+        .folder_button {
+            background: none;
+            border: none;
+            width: 16%;
+            font-size: 180%;
+            color: #cdcdcd;
+            margin: auto 40px auto auto;
+            padding: auto;
+        }
+
+        .folder_button img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .title {
+            text-align: left;
+            float: left;
+            width: 50%;
+            padding-right: 10px;
+        }
+
+        .title_under {
+            color: #cdcdcd;
+            text-align: right;
+        }
+
+        .images {
+            width: 100%;
+            height: auto;
+        }
+
+        .images img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        @media (min-width: 640px) {
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 30px;
+                grid-auto-flow: row dense;
+            }
+
+            .imageFlex1 {
+                display: grid;
+                row-gap: 20px;
+            }
+
+            .imageFlex2 {
+                display: grid;
+                row-gap: 20px;
+            }
+
+            .imageFlex3 {
+                display: grid;
+                row-gap: 20px;
+            }
+        }
+    </style>
+
+    <body>
+        <div class="return">
+            <div><button class="folder_button" type="button" onclick="location.href='album.html'">
+                    <img src="arrow.png" />
+                </button>
+            </div>
+            <div class="title">
+                <h1 class="title_under">배경</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="images">
+                <div class="imageFlex1">
+                    <img src="1.jpg">
+                    <img src="2.jpg">
+                    <img src="3.jpg">
+                    <img src="4.jpg">
+                    <img src="12.jpg">
+                </div>
+            </div>
+            <div class="images">
+                <div class="imageFlex2">
+                    <img src="5.jpg">
+                    <img src="6.jpg">
+                    <img src="7.jpg">
+                    <img src="8.jpg">
+                </div>
+            </div>
+            <div class="images">
+                <div class="imageFlex3">
+                    <img src="9.jpg">
+                    <img src="10.jpg">
+                    <img src="11.jpg">
+                </div>
+            </div>
+        </div>
+    </body>
+
+    </html>
+</body>
+
+</html>

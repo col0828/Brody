@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LoginPage.css?after">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="animore_title.png" rel="shortcut icon" type="image/x-icon">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://static.nid.naver.com/js/naverLogin_implicit-1.0.3.js"
+        charset="utf-8"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <title>Brody</title>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="left">
+                <img class="logo" src="webtoon_logo.png">
+                <h1 class="logo-text"> Brody</h1>
+            </div>
+            <div class="right">
+                <h2 class="sign-logo">Sign In</h2>
+                <div id="naver_id_login"></div>
+                <p class="login-desc">회원가입 없이<br>바로 네이버 계정으로 로그인하세요.</p>
+            </div>
+        </div>
+        <footer class="foot">
+            <div class="footer">
+                <p>Copyright © 2023 posan cle 야 당장 타! All rights reserved.</p>
+            </div>
+            <div class="address">
+                <address>contact whenever you can. 010-8572-7310</address>
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript">
+        var naver_id_login = new naver_id_login("A0hbRdKPEVnTob6A7Duc", "http://127.0.0.1:5500/album.html");
+        var state = naver_id_login.getUniqState();
+        naver_id_login.setButton("green", 3, 40);
+        naver_id_login.setDomain("http://127.0.0.1:5500/loginPage.html");
+        naver_id_login.setState(state);
+        naver_id_login.setPopup();
+        naver_id_login.init_naver_id_login();
+    </script>
+</body>
+
+</html>

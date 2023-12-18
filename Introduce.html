@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="introduce.css?after">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Brody</title>
+</head>
+
+<body>
+    <div class="scroll" data-aos="fade-up">
+        <div class="scroll_under">
+            <p>아래로 <strong>스크롤</strong> 하세요.<br><br><strong>↓</strong></p>
+        </div>
+    </div>
+    <div class="title" data-aos="fade-up">
+        <div class="title_under">
+            <h1>당신의 웹툰 도우미.<br><strong>Brody.</strong></h1>
+        </div>
+    </div>
+    <div class="introducing" data-aos="fade-up">
+        <div class="introducing_under">
+            <div class="text1_intro">
+                <h6 class="year">“A New Paradigm in Copyright Protection“</h6>
+            </div>
+            <div class="image1_intro">
+                <img class="webtoon_logo" src="webtoon_logo.png">
+            </div>
+        </div>
+    </div>
+    <div class="phone" data-aos="fade-up">
+        <div class="coming">
+            <h1>전부 <strong>Brody</strong>로 <br>모여라!</h1>
+            <p class="coming_intro"><strong>Brody</strong>는 웹툰을 캡쳐하고 분류할 수 있습니다. <br>다시 보고 싶은 장면을 담아두세요. <br>클릭 한 번이면
+                언제든지 그 장면으로 <br>이동할 수 있습니다. 저작권 보호는 덤이죠.</p>
+        </div>
+        <div class="phone_under" data-aos="fade-up">
+            <img class="s_pic" src="BrodyPhone.png">
+        </div>
+    </div>
+    <div class="just_in_mobile">
+        <h1 class="wow" data-aos="fade-up">어쩜,<br> 이리 완벽한 <strong>웹툰</strong>이 다 있지?</h1>
+        <p class="wow_under" data-aos="fade-up">내 마음가는대로 저장하기, 나의 <strong>Brody</strong>와 함께라면!</p>
+    </div>
+    <marquee>
+        <div class="container_marquee">
+            <img class="f_pic" src="SoonJung.png">
+            <div class="obstacle"></div>
+            <img class="f_pic" src="ssaumDokHak.png">
+            <div class="obstacle"></div>
+            <img class="f_pic" src="HeartSound2.png">
+            <div class="obstacle"></div>
+            <img class="f_pic" src="Appearance.png">
+            <div class="obstacle"></div>
+        </div>
+    </marquee>
+    <div class="what_up" data-aos="fade-up">
+        <div>
+            <h1 class="what">진짜?<br><strong>Brody</strong>는 이 모든 게 <span class="auto-type"></span></h1>
+        </div>
+    </div>
+    <div class="learn" data-aos="fade-up">
+        <button class="learning" type="button" onclick="location.href='loginPage.html'">더 알아보기</button>
+    </div>
+    <footer class="foot">
+        <div class="footer">
+            <p>Copyright © 2023 posan cle 야 당장 타! All rights reserved.</p>
+        </div>
+        <br>
+        <div class="address">
+            <address>contact whenever you can. 010-8572-7310</address>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["가능해?", "가능하네!"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        })
+        const cont_1 = document.getElementById('cont_1');
+        const cont_2 = document.getElementById('cont_2');
+        const slider = document.getElementById('slider');
+        const s_wid = slider.offsetWidth;
+        const s_li = slider.children;
+        const indi_bar = document.getElementById('indi_bar');
+        let win_wid = window.innerWidth;
+        let s_move_max = (s_wid - (win_wid / 2)) * -1;
+        let s_pos = 0;
+        let li_pos = 0;
+        let pct = 0;
+
+
+        cont_1.addEventListener('wheel', function (e) {
+            e.preventDefault;
+            if (e.deltaY > 0) {
+                cont_2.style.top = `0%`;
+            }
+        });
+
+        cont_2.addEventListener('wheel', function (e) {
+            e.preventDefault;
+            if (e.deltaY < 0 && s_pos >= 0) {
+                setTimeout(() => {
+                    cont_2.style.top = `100%`;
+                }, 500);
+                return;
+            }
+            move_slider(e.deltaY);
+            on_indicator();
+        });
+
+        function move_slider(amount) {
+            s_pos -= amount;
+            if (s_pos < s_move_max) {
+                s_pos = s_move_max;
+                return;
+            } else if (s_pos > 0) {
+                s_pos = 0;
+                return;
+            }
+            slider.style.transform = `translateX(${s_pos}px)`;
+            li_upDown(amount);
+
+        }
+
+        function li_upDown(amount) {
+            li_pos += amount;
+            for (let i = 0; i < s_li.length; i++) {
+                if (i % 2 != 0) {
+                    s_li[i].style.transform = `translateY(${li_pos / (i * 5)}px)`;
+                } else {
+                    s_li[i].style.transform = `translateY(${-li_pos / (i * 5)}px)`;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brody</title>
+</head>
+<style>
+    body {
+        background-color: #282828;
+        padding: auto;
+    }
+
+    img {
+        height: 400px;
+        margin: 5px;
+    }
+</style>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Brody</title>
+    </head>
+    <style>
+        body {
+            margin: 0;
+            background-color: #282828;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .return {
+            height: 100px;
+            width: 80%;
+            margin: auto;
+            padding-top: 20px;
+            display: flex;
+        }
+
+        .folder_button {
+            background: none;
+            border: none;
+            width: 16%;
+            font-size: 180%;
+            color: #cdcdcd;
+            margin: auto 40px auto auto;
+            padding: auto;
+        }
+
+        .folder_button img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .title {
+            text-align: left;
+            float: left;
+            width: 50%;
+            padding-right: 10px;
+        }
+
+        .title_under {
+            color: #cdcdcd;
+            text-align: right;
+        }
+
+        .images {
+            width: 100%;
+            height: auto;
+        }
+
+        .images img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        @media (min-width: 640px) {
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 30px;
+                grid-auto-flow: row dense;
+            }
+
+            .imageFlex1 {
+                display: grid;
+                row-gap: 20px;
+            }
+
+            .imageFlex2 {
+                display: grid;
+                row-gap: 20px;
+            }
+
+            .imageFlex3 {
+                display: grid;
+                row-gap: 20px;
+            }
+        }
+    </style>
+
+    <body>
+        <div class="return">
+            <div><button class="folder_button" type="button" onclick="location.href='album.html'">
+                    <img src="arrow.png" />
+                </button>
+            </div>
+            <div class="title">
+                <h1 class="title_under">남자</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="images">
+                <div class="imageFlex1">
+                    <img
+                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxOTAzMDFfMTUx%2FMDAxNTUxNDQxMjk0MzYz.lPSmHKZkambVctL-XFyB-fUxgXIed2UvcdjYvZ5iresg.1IsxMCddqZyRnyN5-xkcP125bNtp_NqdMSD6tUZr0KMg.JPEG.gpwl715%2FKakaoTalk_20190301_204348788_10.jpg&type=sc960_832">
+                    <img
+                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxOTA0MjhfMjk0%2FMDAxNTU2Mzg1MDE2ODEy.sXn-0xiAEPrQq3CJ4MuW03V0O5jzGED0K88sP5H2uSwg.FBC_WqLBgyN4UqIv9w3uRkBBzBVaiY82tTXXmnOGjgUg.JPEG.maristellajyj%2Fdownloadfile-11.jpg&type=sc960_832">
+                    <img
+                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fpost.phinf.naver.net%2FMjAxNzEyMDlfNTcg%2FMDAxNTEyODIyNTA5NjQw.0OYblp9Yt3wG3zhebixMRwdXJKYzipC7YOogkeOkcxQg.b30Du0I0q5XYXvhiliceE7cRsKiz3vWUIMSrWnwATbwg.PNG%2FIqEHIjNYmNp8B_NxTpjIQt1oPzWA.jpg&type=sc960_832">
+                    <img
+                        src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fi.pinimg.com%2F736x%2F61%2F3d%2Fa4%2F613da4ea17075dc1d005278d74910f2f.jpg&type=sc960_832">
+                    <img
+                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDEwMjJfODUg%2FMDAxNjAzMjk0MDY5NTg4.xLdttl16QAAcP1UTmPCqzWMGyhhdSgtkRZbhPHmVkCEg.kGBu-ciDJ9roABruyf-2FKTYPLQLW8Y18LUX_tJwydwg.JPEG.dneyppah%2F1603294068555.jpg&type=sc960_832">
+                    <img
+                        src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fi.pinimg.com%2F736x%2F8a%2Fec%2Fc4%2F8aecc49b950e2d8aa2435a6c9150cbbf.jpg&type=sc960_832">
+                    <img
+                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzExMjVfNTcg%2FMDAxNzAwODgyNzE0NTkw.c5nyiwdCSwSizH81PlLbtw5-2EqfsBj7L-UtSf0Xm84g.WYuAHvcrA_-y637WAnV8BVAuxtdlJ12HE5w9Q4d10Y0g.JPEG.saltsoeun%2F20231106%25A3%25DF222529.jpg&type=sc960_832">
+                </div>
+            </div>
+            <div class="images">
+                <div class="imageFlex2">
+                    <img
+                        src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fff%2F6d%2F4a%2Fff6d4a02d76ae39c6f9b7f1101bd6e90.jpg&type=sc960_832">
+                    <img
+                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxOTA1MjNfMTU2%2FMDAxNTU4NTcxMjkxNDg2.YMSmNikMMQUaAjUdHn6R41TKK8n-CN8M9XvoNh53T6og.MVq8I-WKzbFtEu7t5U4yhlPcegEQGJ7o3NYh_gf1-QAg.JPEG.papa0825%2F20.JPG&type=sc960_832">
+                    <img
+                        src="https://search.pstatic.net/sunny/?src=https%3A%2F%2F3.gall-img.com%2Ftdgall%2Ffiles%2Fattach%2Fimages%2F185999460%2F894%2F411%2F237%2F07de251a95dd722fb5c24c1aafff9e06.jpg&type=sc960_832">
+                    <img
+                        src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fi.pinimg.com%2F736x%2F7f%2F09%2F14%2F7f0914c0ef1235664eab198e3a39561f.jpg&type=sc960_832">
+                    <img
+                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAxMTJfMjY0%2FMDAxNjEwNDM2NzM3ODcy.Rwzd3TqQmssW1VdkLMJLOaNVkGOi_aHDCsKcr_AsVL0g.GQygoZ2bi0Bzo5JNRBRZ7ytgc_y9RMC4dC-pk8zG5HIg.JPEG.hong_danbi%2F3E3B2619-6F09-4001-95BF-485F459BB434.jpeg&type=sc960_832">
+                    <img
+                        src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fi.pinimg.com%2F736x%2F1f%2F63%2Fd1%2F1f63d163c70ec409a79c9b0458dcf286.jpg&type=sc960_832">
+                </div>
+            </div>
+            <div class="images">
+                <div class="imageFlex3">
+                    <img
+                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTExMzBfMTAy%2FMDAxNjM4MjA5MzQzOTg0.bQX25bKODThI3YIXnlHdBSRU5kj7IeCnF1L34ujhE1Eg.6eWSnepXT1qltPYmBeX7CXfRhKxBzxFqdP4mxAsAfskg.JPEG.kimsuvin00%2FKakaoTalk_20211129_011203117.jpg&type=sc960_832">
+                    <img
+                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDVfMjYz%2FMDAxNjE0OTQ2Mjc2NDc1.xPJfir8zOccHXp2ztsPA34jIoMUPshJl4dbwApUBvQcg._2cgAAFNpEx_r7wn1rdSSB3SEfijJpretUfxbCN1uhMg.JPEG.reason2017%2F%25C7%25CF%25C0%25CE%25B8%25AE.JPG&type=sc960_832">
+                    <img
+                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAxMDdfMTc3%2FMDAxNjEwMDExNjQ1MzAw.2a5GfHa2vKPP8_hXduMBGQX6_JSg7DeHarJ_dmUEqQQg.r8vF4oOCe_b7fHqf9rQTMkKFcdMSNl8Wfb2gPMJJUwsg.PNG.montyt%2FScreen_Shot_2021-01-07_at_2.16.41_PM.png&type=a340">
+                    <img
+                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA3MDFfNTUg%2FMDAxNjI1MTA1MTg4MTMz.x_EJISyRmethobsXkY8xnsYN37wlcNfQx8XNEebJOqQg.i5HylGmsx6wQad0tDSD3DEsTLJj7GRwW-B9__gGrHJ0g.PNG.shong8%2FIMG_0072.PNG&type=sc960_832">
+                    <img
+                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAxMTBfMTkw%2FMDAxNjEwMjg5MzEzMjUw.A5wKdAGjxr75uDdnJ9bISjeUBgRY61QIgFXvKUxE2wIg.iLkhw09h7Roqm4B_ey0xZBJHQ1MV2bLSRiq0n029SEkg.JPEG.wpqlrhfl8323%2F%25C0%25FC%25B5%25B6%25BD%25C39%25B6%25F3%25C0%25CC%25B9%25FA_%25C4%25C9%25B9%25CC2.jpg&type=sc960_832">
+                </div>
+            </div>
+        </div>
+    </body>
+
+    </html>
+</body>
+
+</html>

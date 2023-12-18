@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brody</title>
+</head>
+<style>
+    body {
+        background-color: #282828;
+        padding: auto;
+    }
+
+    img {
+        height: 400px;
+        margin: 5px;
+    }
+</style>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Brody</title>
+    </head>
+    <style>
+        body {
+            margin: 0;
+            background-color: #282828;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .return {
+            height: 100px;
+            width: 80%;
+            margin: auto;
+            padding-top: 20px;
+            display: flex;
+        }
+
+        .folder_button {
+            background: none;
+            border: none;
+            width: 16%;
+            font-size: 180%;
+            color: #cdcdcd;
+            margin: auto 40px auto auto;
+            padding: auto;
+        }
+
+        .folder_button img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .title {
+            text-align: left;
+            float: left;
+            width: 50%;
+            padding-right: 10px;
+        }
+
+        .title_under {
+            color: #cdcdcd;
+            text-align: right;
+        }
+
+        .images {
+            width: 100%;
+            height: auto;
+        }
+
+        .images img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        @media (min-width: 640px) {
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 30px;
+                grid-auto-flow: row dense;
+            }
+
+            .imageFlex1 {
+                display: grid;
+                row-gap: 20px;
+            }
+
+            .imageFlex2 {
+                display: grid;
+                row-gap: 20px;
+            }
+
+            .imageFlex3 {
+                display: grid;
+                row-gap: 20px;
+            }
+        }
+    </style>
+
+    <body>
+        <div class="return">
+            <div><button class="folder_button" type="button" onclick="location.href='album.html'">
+                    <img src="arrow.png" />
+                </button>
+            </div>
+            <div class="title">
+                <h1 class="title_under">동물</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="images">
+                <div class="imageFlex1">
+                    <img
+                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA4MjlfOTAg%2FMDAxNTk4Njc4NjE2MTc1.Dldg__IsSYLC95FL1ocNq-OW6bVRhmIaSDC94lGeCqcg.LWmYe6JPTYIXT3witCnXcJw3Vd9hDrIIrFu8k2L21EYg.JPEG.hong_danbi%2F883E100B-2A19-45B2-A850-C13F6F1E62BA.jpeg&type=sc960_832">
+                    <img
+                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA4MTJfMTU1%2FMDAxNjI4NzMzOTg1MDI3.RHRyVwq6bgcCBJ9KsRD9kL1CGLOJgCCFNsaVdLc8tIUg.Zo8DCJvfbbyAmHEBpgIvAY4pwZFLPTpyQZV2XSQin58g.JPEG.ghkdwjdtka%2FKakaoTalk_20210812_101314003_06.jpg&type=sc960_832">
+                    <img
+                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2FMjAxODEyMjFfMTEw%2FMDAxNTQ1MzYxMzE1MjA0.Ox68WRSiWthZfKcWhjC5JyxIjdv8rJbH5A-jPCgTexIg.0K9oE5lcmbHpj4xoYn7o_Cv40g225FCx04WHYcFCGkIg.PNG.qpalzm200%2F101010.PNG&type=sc960_832 ">
+                    <img
+                        src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F77%2Ffe%2F98%2F77fe9888b1bbf61dfca02e63458bd87c.jpg&type=sc960_832">
+                    <img
+                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA4MTdfMzMg%2FMDAxNjI5MTgzODEwMTYy.lqhkEVTi8hGaLjU58dFH-891LRTXPMLm3dM4Yaho6Asg.VG4jkaTPBwfAkYvM3Khbz3bvF8A0fU4yXR-qdU_hI6gg.JPEG.o_o930624%2FIMG_1506.jpg&type=sc960_832">
+                    <img
+                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA2MDRfMTAw%2FMDAxNTkxMjYwODAxMzUz.vyoTVpLx_y2pLRtJ49FdAScblppstbEa4VfU1SzeMAAg.4SF3gU_TOehDjxdPcG-JUWQ-VdYc3EgWdjrX89ivPgUg.JPEG.yeagene96%2F1591260535758.jpg&type=sc960_832">
+                </div>
+            </div>
+            <div class="images">
+                <div class="imageFlex2">
+                    <img
+                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA0MTdfMTYx%2FMDAxNTg3MTI0OTkxOTY4.mBNIznTBFs27CHizA05gWZYpq1I6f7BcRCa4C1GXSHUg.yVFT9cjnNFCqa5JIM4asILlI-po45BcSyq1_ERIFymkg.JPEG.ddbbgglover%2FIMG_3531.jpg&type=sc960_832">
+                    <img
+                        src="https://search.pstatic.net/sunny/?src=https%3A%2F%2F3.gall-img.com%2Ftdgall%2Ffiles%2Fattach%2Fimages%2F82%2F372%2F739%2F222%2Fe66400dcf05aa09634260a48d3dca42f.jpg&type=sc960_832">
+                    <img
+                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxOTEwMDNfNjYg%2FMDAxNTcwMDkwMjAwMjEw.tFusELfKsX9T5iY-_MlkO1wS7Is7KzfKIf0nuRnRFswg.j5bRv1WCc1svW69g_ZzYT4OHKJPUrOjeDzTE4dnPgasg.JPEG.kansyc2010%2FIMG_7431.JPG&type=sc960_832">
+                    <img
+                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzEwMDRfNDMg%2FMDAxNjk2Mzk2Mjc2OTY1.6q9zI57DdOcT1EOuMlnH1x5T6zH_FMxZu1oV1pQQfFsg.k67Szuz54D2Xehs81EApYyZT8zyg3x0ITB2NH52pwcEg.PNG.ggygv7%2F20231004_141051_8.png&type=sc960_832">
+                    <img
+                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA4MjRfMTcx%2FMDAxNjkyODQ0MjAxNTE3.p5L9QFflghKl4B6RlhKJvYBGLI_xIu8p-8OzKPq4g9gg.X95RRVaAmRJC3REeKWX2rSH_6YJhJgrUB_5HW7RDOMsg.JPEG.postpr%2FScreenshot_2023-08-23_at_12.55.31.JPG&type=sc960_832">
+                    <img
+                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA3MjdfMjIx%2FMDAxNjI3MzQ4MTAzNDM4.YwAmhNjOi_KbcAnygC1LYgF9bKX8pOCl3w-nfJv2iU0g.mqlTL6hTlx_7V1PyZKP8aPR0KmaWR5j00hqIuBmxqCYg.JPEG.coding_nplay%2FIMG_0092.JPG&type=sc960_832">
+                    <img
+                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA4MjRfMTcx%2FMDAxNjkyODQ0MjAxNTE3.p5L9QFflghKl4B6RlhKJvYBGLI_xIu8p-8OzKPq4g9gg.X95RRVaAmRJC3REeKWX2rSH_6YJhJgrUB_5HW7RDOMsg.JPEG.postpr%2FScreenshot_2023-08-23_at_12.55.31.JPG&type=sc960_832">
+                </div>
+            </div>
+            <div class="images">
+                <div class="imageFlex3">
+                    <img
+                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA3MjNfMjQz%2FMDAxNjkwMDkzNjE2NzUw.iriIY6YchXYxyYkE97oDmTfgHuRRmlJPpB_88GV8PWEg.w6Ul2Uhp6n_7_hxKYOrLJS91Q3trfSRK8O2h2Vzv0bQg.JPEG.foxyland98%2FIMG_4542.JPG&type=sc960_832">
+                    <img
+                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzAzMDhfMjE5%2FMDAxNjc4MjQwNDc4NzY4.IKfYA6E4LmeQI5vnFYYn5W5r3PmK15C9QsxKV6jcV40g.miBTDEwS32_Z_SrS6n1q9TBla3-DqbpCYDKClHuSNs0g.PNG.studiojhs%2F1678240286.png&type=sc960_832">
+                    <img
+                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzAyMTRfNjQg%2FMDAxNjc2Mzc5NjQ5MjYx.VpZq7ylG_aa0LFf1hl6E9NzlOZKkBA9ClMbrJyQCkssg.FmoGOp8JsKMinXLMIpVEkdsIrA5iHBKJDr1ldlL52N4g.PNG.hhl8117a%2Fimage.png&type=sc960_832">
+                    <img
+                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA4MjVfMjYx%2FMDAxNjkyOTU2NTczMTEy.-RwaoQOIgKXXHt83VfJ1GWvVfUIH2ZPjcRurEpjoslog.g692g5hFFEMDfGs_F8VthA4_LndZ-ILfwpcBN3d3F7Mg.PNG.xodiddl7611%2F%25C8%25AD%25B8%25E9_%25C4%25B8%25C3%25B3_2023-08-25_183751.png&type=sc960_832">
+                    <img
+                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzAzMDdfMTM5%2FMDAxNjc4MTY3NzYwODQ0.80oPfHELUHRml4cNdwpaSOkexDbbmrM6RulHn1hO0W8g.HYCSFm2D1SfBc05u1_D3Pz2a-NRCuGbf7svpcOY7zs0g.PNG.forevermhs2%2F%25BE%25E7%25C0%25CC1.png&type=sc960_832">
+                </div>
+            </div>
+        </div>
+    </body>
+
+    </html>

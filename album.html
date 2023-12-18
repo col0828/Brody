@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="album.css?after">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="animore_title.png" rel="shortcut icon" type="image/x-icon">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Brody</title>
+    <script type="text/javascript" src="https://static.nid.naver.com/js/naverLogin_implicit-1.0.3.js"
+        charset="utf-8"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+
+<body>
+    <div class="title">
+        <h1>My Album</h1>
+        <div id='result'></div>
+    </div>
+    <div class="folder">
+        <button class="folder_button" type="button" onclick="location.href='wom.html'">
+            <img src="folder_close.png" onmouseover="this.src='folder_open.png';"
+                onmouseout="this.src='folder_close.png';" />
+            여자
+        </button>
+        <button class="folder_button" type="button" onclick="location.href='man.html'">
+            <img src="folder_close.png" onmouseover="this.src='folder_open.png';"
+                onmouseout="this.src='folder_close.png';" />
+            남자
+        </button>
+        <button class="folder_button" type="button" onclick="location.href='wom_man.html'">
+            <img src="folder_close.png" onmouseover="this.src='folder_open.png';"
+                onmouseout="this.src='folder_close.png';" />
+            여자+남자
+        </button>
+        <button class="folder_button_except" type="button" onclick="location.href='ani.html'">
+            <img src="folder_close.png" onmouseover="this.src='folder_open.png';"
+                onmouseout="this.src='folder_close.png';" />
+            동물
+        </button>
+    </div>
+    <div class="folder">
+        <button class="folder_button" type="button" onclick="location.href='back.html'">
+            <img src="folder_close.png" onmouseover="this.src='folder_open.png';"
+                onmouseout="this.src='folder_close.png';" />
+            배경
+        </button>
+        <button class="folder_button" type="button" onclick="location.href='etc.html'">
+            <img src="folder_close.png" onmouseover="this.src='folder_open.png';"
+                onmouseout="this.src='folder_close.png';" />
+            기타
+        </button>
+    </div>
+
+    <script type="text/javascript">
+        var naver_id_login = new naver_id_login("A0hbRdKPEVnTob6A7Duc", "http://localhost:5500/album.html");
+        // 접근 토큰 값 출력
+        alert(naver_id_login.oauthParams.access_token);
+        // 네이버 사용자 프로필 조회
+        naver_id_login.get_naver_userprofile("naverSignInCallback()");
+        // 네이버 사용자 프로필 조회 이후 프로필 정보를 처리할 callback function
+    </script>
+</body>
+
+</html>

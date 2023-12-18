@@ -1,0 +1,338 @@
+* {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+@font-face {
+    font-family: 'Pretendard-Light';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    background: linear-gradient(#282828, #171717);
+}
+
+@media (max-width: 575px) {
+    .scroll {
+        display: flex;
+        justify-content: center;
+        padding-top: 300px;
+    }
+
+    .scroll_under {
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .title {
+        display: flex;
+        justify-content: center;
+        margin-top: 300px;
+        margin-bottom: 200px;
+    }
+
+    .title_under {
+        font-size: 18px;
+        text-align: center;
+        color: #fff;
+    }
+
+    strong {
+        color: #46eb6d;
+    }
+
+    .introducing {
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+    }
+
+    .introducing_under {
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        font-size: 10px;
+    }
+
+    .text1_intro {
+        text-align: left;
+        width: 40%;
+        position: relative;
+        top: 120px;
+    }
+
+    .image1_intro {
+        text-align: right;
+        width: 30%;
+        transform: scale(0.3);
+    }
+
+    .webtoon_logo {
+        border-radius: 20px;
+    }
+
+    .year {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .phone {
+        margin-top: 200px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .phone_under {
+        position: absolute;
+        top: -290px;
+        left: 60px;
+    }
+
+    .container_marquee {
+        display: flex;
+        justify-content: center;
+    }
+
+    .obstacle {
+        padding-left: 1px;
+    }
+
+    .f_pic {
+        transform: scale(0.5);
+    }
+
+    .s_pic {
+        transform: scale(0.25);
+    }
+
+    .marquee_wow {
+        margin-top: 170px;
+    }
+
+    .coming {
+        color: #fff;
+        right: 30px;
+        margin-right: 110px;
+    }
+
+    .coming_intro {
+        font-size: 10px;
+    }
+
+    .just_in_mobile {
+        margin-top: 200px;
+    }
+
+    .wow {
+        font-size: 25px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .wow_under {
+        font-size: 10px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .what {
+        font-size: 25px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .what_up {
+        margin-top: 200px;
+    }
+
+    .learn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .learning {
+        background: linear-gradient(#46eb6d, #2bff8a);
+        border: none;
+        border-radius: 30px;
+        width: 160px;
+        height: 45px;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        color: #ffffff39;
+        font-size: 10px;
+    }
+
+    .address {
+        display: flex;
+        justify-content: center;
+        color: #ffffff39;
+        font-size: 10px;
+    }
+
+    .foot {
+        margin-top: 200px;
+        margin-bottom: 100px;
+    }
+}
+
+@media (min-width: 575px) {
+    .scroll {
+        display: flex;
+        justify-content: center;
+        padding-top: 300px;
+    }
+
+    .scroll_under {
+        text-align: center;
+        color: #fff;
+        font-size: 50px;
+    }
+
+    .title {
+        display: flex;
+        justify-content: center;
+        margin-top: 300px;
+        margin-bottom: 200px;
+    }
+
+    .title_under {
+        font-size: 50px;
+        text-align: center;
+        color: #fff;
+    }
+
+    strong {
+        color: #46eb6d;
+    }
+
+    .introducing {
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+    }
+
+    .introducing_under {
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        font-size: 25px;
+    }
+
+    .text1_intro {
+        text-align: left;
+        width: 40%;
+        position: relative;
+        top: 50px;
+    }
+
+    .image1_intro {
+        text-align: right;
+        width: 30%;
+    }
+
+    .webtoon_logo {
+        border-radius: 20px;
+    }
+
+    .year {
+        font-size: 60px;
+        margin: 0;
+    }
+
+    .phone {
+        margin-top: 200px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container_marquee {
+        display: flex;
+        justify-content: center;
+    }
+
+    .obstacle {
+        padding-left: 50px;
+    }
+
+    .f_pic {
+        transform: scale(0.5);
+    }
+
+    .s_pic {
+        transform: scale(0.8);
+    }
+
+    .marquee_wow {
+        margin-top: 170px;
+    }
+
+    .coming {
+        font-size: 50px;
+        color: #fff;
+    }
+
+    .coming_intro {
+        font-size: 20px;
+    }
+
+    .wow {
+        font-size: 80px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .wow_under {
+        font-size: 20px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .what {
+        font-size: 80px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .what_up {
+        margin-top: 200px;
+    }
+
+    .learn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .learning {
+        background: linear-gradient(#46eb6d, #2bff8a);
+        border: none;
+        border-radius: 30px;
+        width: 200px;
+        height: 50px;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        color: #ffffff39;
+    }
+
+    .address {
+        display: flex;
+        justify-content: center;
+        color: #ffffff39;
+    }
+
+    .foot {
+        margin-top: 200px;
+        margin-bottom: 100px;
+    }
+}
